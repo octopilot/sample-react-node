@@ -12,7 +12,11 @@ build:
         dockerfile: Dockerfile
     - image: sample-react-node-api
       context: api
-      buildpacks:
-        builder: paketobuildpacks/builder-jammy-base
+      docker:
+        dockerfile: Dockerfile
+    - image: sample-react-node-worker
+      context: worker
+      docker:
+        dockerfile: Dockerfile
 
 deploy: {}

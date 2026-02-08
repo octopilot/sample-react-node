@@ -26,8 +26,8 @@ export default function App() {
 
   return (
     <div style={{ maxWidth: 400, margin: '2rem auto', padding: 16, fontFamily: 'system-ui' }}>
-      <h1>Greet (React + Go)</h1>
-      <p>React frontend + Go API — one repo.</p>
+      <h1>Greet (React + Node)</h1>
+      <p>React frontend + Node API — one repo.</p>
       <form onSubmit={handleSubmit}>
         <label style={{ display: 'block', marginBottom: 8 }}>Name</label>
         <input value={name} onChange={e => setName(e.target.value)} required placeholder="Alice" style={{ width: '100%', padding: 8, marginBottom: 12, boxSizing: 'border-box' }} />
